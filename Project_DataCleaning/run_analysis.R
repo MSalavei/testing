@@ -49,6 +49,3 @@ final_data <- tidy_data %>% group_by(subject, activity) %>% summarise_all(funs(m
 
 # Step 8: Save the tidy dataset to a file
 write.table(final_data, "FinalData.txt", row.name = FALSE)
-
-# README.md and CodeBook.md are created manually and pushed to the GitHub repository along with this script
-
